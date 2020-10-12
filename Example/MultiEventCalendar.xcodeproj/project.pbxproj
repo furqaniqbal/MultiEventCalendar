@@ -40,9 +40,9 @@
 		607FACE51AFB9204008FA782 /* MultiEventCalendar_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiEventCalendar_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		60D85CBED6F6CC4F6055BDAD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		655AB9CE908D164A9869EA8C /* MultiEventCalendar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MultiEventCalendar.podspec; path = ../MultiEventCalendar.podspec; sourceTree = "<group>"; };
-		6B0093F231188E4BC11A6742 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		60D85CBED6F6CC4F6055BDAD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		655AB9CE908D164A9869EA8C /* MultiEventCalendar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MultiEventCalendar.podspec; path = ../MultiEventCalendar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6B0093F231188E4BC11A6742 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71D83C31417F7D007572C830 /* Pods-MultiEventCalendar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiEventCalendar_Tests.release.xcconfig"; path = "Target Support Files/Pods-MultiEventCalendar_Tests/Pods-MultiEventCalendar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		76A08AE150B8D649994E5E70 /* Pods-MultiEventCalendar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiEventCalendar_Example.release.xcconfig"; path = "Target Support Files/Pods-MultiEventCalendar_Example/Pods-MultiEventCalendar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D75D91F207A6B442D99543CD /* Pods_MultiEventCalendar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiEventCalendar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -156,7 +156,6 @@
 				0E90F4EE012B10EA865AA114 /* Pods-MultiEventCalendar_Tests.debug.xcconfig */,
 				71D83C31417F7D007572C830 /* Pods-MultiEventCalendar_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +313,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MultiEventCalendar_Example/Pods-MultiEventCalendar_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DateTools/DateTools.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/MultiEventCalendar/MultiEventCalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiEventCalendar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

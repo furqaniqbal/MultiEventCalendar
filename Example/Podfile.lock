@@ -1,0 +1,27 @@
+PODS:
+  - DateTools (2.0.0)
+  - JTAppleCalendar (7.1.7)
+  - MultiEventCalendar (0.0.8):
+    - DateTools (~> 2.0)
+    - JTAppleCalendar (~> 7.0)
+
+DEPENDENCIES:
+  - MultiEventCalendar (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - DateTools
+    - JTAppleCalendar
+
+EXTERNAL SOURCES:
+  MultiEventCalendar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
+  JTAppleCalendar: 96da4d8388fa6dc82d6a60d41ef36a015e167e2f
+  MultiEventCalendar: cac140b6519258c3a5b25542b5d091989f04b6ca
+
+PODFILE CHECKSUM: 6a54ba7d83364abda5e57627cc9302754b83da5b
+
+COCOAPODS: 1.9.3
