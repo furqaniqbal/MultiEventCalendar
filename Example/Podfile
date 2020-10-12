@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MultiEventCalendar_Example' do
+  pod 'MultiEventCalendar', :path => '../'
+
+  target 'MultiEventCalendar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
