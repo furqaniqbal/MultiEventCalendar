@@ -17,7 +17,7 @@ pod 'MultiEventCalendar'
 
 ## Author
 
-Tennis Locker Library
+Sports Analytics
 
 ## License
 
